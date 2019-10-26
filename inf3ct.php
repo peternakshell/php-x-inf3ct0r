@@ -30,7 +30,8 @@ function infect($dir, $evilscr){
 
 echo "<title>X-Inf3ct0r by ./MyHeartIsyr</title>
 <style>
-@font-face{font-family:i;src:url(i.woff2) format('woff2'),url(i.woff) format('woff');}
+@font-face{font-family:i;src:url(https://github.com/peternakshell/php-x-inf3ct0r/blob/master/i.woff2) format('woff2'),
+url(https://github.com/peternakshell/php-x-inf3ct0r/blob/master/i.woff) format('woff');}
 body{background:#000;color:#fff;font-family:Courier New;}
 #title{text-align:center;font-size:calc(2.3em + 2.3vw);color:#fff;font-family:i;}
 input{background:transparent;border:1px solid #333;color:#fff;}
